@@ -7,8 +7,8 @@ let slider = {
         for (let i = 1; i <= 3; i++) {
 //            let activeLi = document.querySelector('.main__block-one__menu__li[data-slide="'+i+'"]');
 //            let activeDot = document.querySelector('.main__block-one__slider__dot[data-slide="'+i+'"]');
-            let activeLi = topLinks[i-1];
-            let activeDot = dotLinks[i-1];
+            const activeLi = topLinks[i-1];
+            const activeDot = dotLinks[i-1];
             if (i == this.curSlide) {
                 activeLi.classList.add('li_active');
                 activeDot.classList.add('dot_active');
@@ -25,13 +25,13 @@ let slider = {
     }    
 }
 
-let cityContent = document.getElementById('city-left');
-let areaContent = document.getElementById('area-left');
-let timeContent = document.getElementById('time-left');
-let imgContent = document.getElementById('slide-image');
-let topLinks = document.getElementsByClassName('main__block-one__menu__li')
-let dotLinks = document.getElementsByClassName('main__block-one__slider__dot')
-let arrowLinks = document.getElementsByClassName('slider-arrows')
+const cityContent = document.getElementById('city-left');
+const areaContent = document.getElementById('area-left');
+const timeContent = document.getElementById('time-left');
+const imgContent = document.getElementById('slide-image');
+const topLinks = document.getElementsByClassName('main__block-one__menu__li')
+const dotLinks = document.getElementsByClassName('main__block-one__slider__dot')
+const arrowLinks = document.getElementsByClassName('slider-arrows')
 
 const chooseSlide = (event) => {
     slider.curSlide = event.target.dataset.slide;
