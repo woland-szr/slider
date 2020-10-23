@@ -1,3 +1,3 @@
 # slider
 JS slider for landing.
-https://woland-szr.github.io/slider/
+Is published at https://woland-szr.github.io/slider/
